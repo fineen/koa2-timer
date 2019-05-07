@@ -2,7 +2,7 @@
  * Module Dependencies
  */
 
-var Hook = require('koa-middleware-hook')
+var Hook = require('koa2-middleware-hook')
 var Debug = require('debug')
 var chalk = require('chalk')
 var ms = require('ms')
@@ -32,8 +32,8 @@ function Timer (options) {
   // setup the hooks
   var hook = Hook(marker, reducer(options))
 
-  return function timer (generator) {
-    return hook(generator)
+  return function timer (middleware) {
+    return hook(middleware)
   }
 }
 

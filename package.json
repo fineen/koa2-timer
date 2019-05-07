@@ -1,7 +1,7 @@
 {
-  "name": "koa-timer",
+  "name": "koa2-timer",
   "version": "1.0.0",
-  "description": "time your middleware",
+  "description": "time your koa2 middleware",
   "keywords": [
     "timer",
     "koa",
@@ -10,16 +10,17 @@
   "author": "Matthew Mueller <matt@lapwinglabs.com>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/koajs/koa-timer.git"
+    "url": "git@github.com:fineen/timer.git"
   },
   "dependencies": {
-    "chalk": "^1.1.1",
-    "debug": "^2.2.0",
-    "koa-middleware-hook": "^1.0.2",
-    "ms": "^2.0.0"
+    "chalk": "^2.4.2",
+    "debug": "^4.1.1",
+    "koa2-middleware-hook": "^1.0.1",
+    "ms": "^2.1.1"
   },
   "devDependencies": {
-    "koa": "^1.1.0"
+    "koa": "^2.7.0"
   },
-  "main": "index"
+  "main": "index",
+  "license": "MIT"
 }
